@@ -20,8 +20,7 @@ const listRepository = () => {
                })
                /*
                 0) Clone the repository and create your own branch before start to work
-                1) Print the name of the repository
-                2) Print the link of the repository
+                
                 3) One or two more information that you believe its good for your application
                 4) Create a pull request when you finish your work
                */
