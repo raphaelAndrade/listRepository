@@ -11,6 +11,7 @@ const listRepository = () => {
            if(status !== 200){
                console.log(`Ops! Something is wrong ${status}`)
            }
+           document.getElementById('listRepo').innerHTML ="";
            resp.json().then(repository => {
                console.log(repository)
                repository.map(value => {
