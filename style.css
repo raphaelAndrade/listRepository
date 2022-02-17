@@ -35,4 +35,15 @@ header .mainMenu a {
   background: saddlebrown;
   margin-bottom: 40px;
 }
+
+.btn {
+  margin-bottom: 200px;
+}
+
+/*List Repository section*/
+ul.listRepo {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 /*# sourceMappingURL=style.css.map */
