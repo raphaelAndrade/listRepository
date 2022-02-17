@@ -1,0 +1,49 @@
+/* Header Section */
+header {
+  width: 100%;
+  background-color: tomato;
+  padding: 15px 0;
+  border-bottom: 10px solid #f04b2e;
+}
+
+header .logo {
+  width: 200px;
+  height: 80px;
+  color: tomato;
+  background-color: white;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 80px;
+}
+
+header .mainMenu {
+  float: right;
+  margin-top: 25px;
+}
+
+header .mainMenu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  display: inline-block;
+}
+
+/* Banner Section */
+.banner {
+  width: 100%;
+  height: 400px;
+  background: saddlebrown;
+  margin-bottom: 40px;
+}
+
+.btn {
+  margin-bottom: 200px;
+}
+
+/*List Repository section*/
+ul.listRepo {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */
