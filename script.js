@@ -12,6 +12,7 @@ const listRepository = () => {
            if(status !== 200){
                console.log(`Ops! Something is wrong ${status}`)
            }
+           document.getElementById("listRepoInfo").innerHTML=""
            resp.json().then(repository => {
             //    console.log(repository)
 
@@ -20,7 +21,8 @@ const listRepository = () => {
                    const name = value.name;
                    const url = value.hooks_url;
                    const description = value.description;
-                   document.getElementById("listRepoInfo").innerHTML+=`<td>${name}</td> <td> ${url}</td><td>${description}`                
+                   document.getElementById("listRepoInfo").innerHTML+=`<td>${name}</td> <td> ${url}</td><td>${description}` 
+                                  
                })
            })
        })
