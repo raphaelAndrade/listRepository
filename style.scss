@@ -1,3 +1,10 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    background-color: bisque;
+}
 /* Header Section */
 header {
     width: 100%;
@@ -30,8 +37,20 @@ header {
   .banner {
       width: 100%;
       height: 400px;
-      background: saddlebrown;
-      margin-bottom: 40px
+      background: rgb(233, 122, 42);
+      margin-bottom: 40px;
+      text-align: center;
+      font-family: 'Fredoka One', cursive;
+      //font-size: 50px;
+      div{
+          h2{
+            padding-top: 40px;
+          }
+      }
+      div.text{
+          font-weight: lighter;
+          color: gray;
+      }
   }
 
   .btn {
@@ -53,7 +72,7 @@ header {
             color: black;
             background-color: rgb(238, 168, 77);
             padding: 20px;
-            
+
           }
           .name{
             color: black;
@@ -68,3 +87,4 @@ header {
           }
       }
   }
+

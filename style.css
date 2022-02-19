@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+* {
+  background-color: bisque;
+}
+
 /* Header Section */
 header {
   width: 100%;
@@ -32,8 +37,19 @@ header .mainMenu a {
 .banner {
   width: 100%;
   height: 400px;
-  background: saddlebrown;
+  background: #e97a2a;
   margin-bottom: 40px;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+
+.banner div h2 {
+  padding-top: 40px;
+}
+
+.banner div.text {
+  font-weight: lighter;
+  color: gray;
 }
 
 .btn {
