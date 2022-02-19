@@ -37,7 +37,7 @@ header .mainMenu a {
 }
 
 .btn {
-  margin-bottom: 200px;
+  margin-bottom: 20px;
 }
 
 /*List Repository section*/
@@ -45,5 +45,24 @@ ul.listRepo {
   margin: 0;
   padding: 0;
   list-style: none;
+  color: red;
+}
+
+ul.listRepo li .url {
+  color: black;
+  background-color: #eea84d;
+  padding: 20px;
+}
+
+ul.listRepo li .name {
+  color: black;
+  padding: 20px;
+  background-color: aquamarine;
+}
+
+ul.listRepo li .status {
+  color: black;
+  padding: 20px;
+  background-color: #f37e7e;
 }
 /*# sourceMappingURL=style.css.map */

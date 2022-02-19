@@ -53,15 +53,27 @@
                           <input type="text" class="form-control" id="userID" aria-describedby="userID">
                           <div id="emailHelp" class="form-text">Please insert the user ID</div>
                         </div>
-                        <button type="submit" class="btn btn-primary" id="searchRepository">Search Repository</button> <!--TODO: Call the listRepository function using onclick with a callback functin-->
+                        <button class="btn btn-primary" id="searchRepository">Search Repository</button> <!--TODO: Call the listRepository function using onclick with a callback functin-->
                       </form>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <ul class="listRepo"><!--Create the list by javascript--></ul>
+                    <ul class="listRepo" id="listRepoLinks">
+                        <li><!--contenet generated with javascript--></li>
+                    </ul>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="listRepo" id="listRepoNames">
+                        <div class="item">
+                            <li><!--contenet generated with javascript--></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </section>
 </body>

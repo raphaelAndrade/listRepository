@@ -10,14 +10,26 @@ const listRepository = () => {
        fetch(url).then(resp => {
            const status = resp.status;
            if(status !== 200){
+               alert(`Sorry, something went wrong, try again error:${status}`) // I added this line for to let to know the user why the app didn't give back any response in case the fetch falis
                console.log(`Ops! Something is wrong ${status}`)
            }
            resp.json().then(repository => {
-               console.log(repository)
+               //console.log(repository)
                repository.map(value => {
                    const name = value.name;
                    const url = value.hooks_url;
-               })
+                   const status = value.private;
+                   console.log(name);
+                   console.log(url);
+                   const ul = document.getElementById("listRepoLinks");
+                   ul.innerHTML += `<li><div class="url">Link:<a>href="${url}">${url}<a/></div><div class="name"><a> Name: ${name}</a></div><div><div class="status"><a>Private status: ${status}<a/><div></li>`
+                   
+                    
+                  
+                })
+            
+            
+               
                /*
                 0) Clone the repository and create your own branch before start to work
                 1) Print the name of the repository
@@ -30,9 +42,13 @@ const listRepository = () => {
     }
 }
 
+
+
 //Add event click to the button
 const button = document.getElementById('searchRepository');
 button.addEventListener('click',(e)=> {
     e.preventDefault();
     listRepository();
 })
+
+

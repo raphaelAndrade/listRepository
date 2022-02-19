@@ -35,7 +35,7 @@ header {
   }
 
   .btn {
-      margin-bottom: 200px;
+      margin-bottom: 20px;
   }
 
   /*List Repository section*/
@@ -43,4 +43,28 @@ header {
       margin: 0;
       padding: 0;
       list-style: none;
+      color: red;
+      li {
+          a{
+            //padding-left: 100px;
+              
+          }
+          .url{
+            color: black;
+            background-color: rgb(238, 168, 77);
+            padding: 20px;
+            
+          }
+          .name{
+            color: black;
+            padding: 20px;
+            background-color: aquamarine;
+          }
+          .status{
+              color: black;
+              padding: 20px;
+              background-color: rgb(243, 126, 126);
+
+          }
+      }
   }
