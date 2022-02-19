@@ -88,3 +88,28 @@ header {
       }
   }
 
+  .container {
+      .row {
+          .col-md-3{
+              background-color: aquamarine;
+              padding-left: 55px;
+              .logo{
+                  color: black;
+                  width: 200px;
+              }
+          }
+          .col-md-9{
+            background-color: aquamarine;
+            .mainMenu{
+                background-color: aqua;
+            }
+            a{
+                background-color: aqua;
+                font-weight: bolder;
+                font-size: 20px;
+                color: rgb(66, 65, 65);
+            }
+          }
+      }
+  }
+

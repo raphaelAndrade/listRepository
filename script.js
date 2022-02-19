@@ -1,3 +1,7 @@
+// To do list in this repository
+// 1.- We can add a filter by ID or name, but for that we need to display the ID as well, but that's not too hard to be honest
+// 2.- We can add a little bit of more style and improve the color scheme in order to improve the user experience.
+
 //Create the function to fetch the list of repository
 
 const listRepository = () => {
@@ -22,7 +26,7 @@ const listRepository = () => {
                    console.log(name);
                    console.log(url);
                    const ul = document.getElementById("listRepoLinks");
-                   ul.innerHTML += `<li><div class="url">Link:<a>href="${url}">${url}<a/></div><div class="name"><a> Name: ${name}</a></div><div><div class="status"><a>Private status: ${status}<a/><div></li>`
+                   ul.innerHTML += `<li><div class="url">Link:<a>href="${url}">${url}<a/></div><div class="name"><a> Name: ${name}</a></div><div><div class="status"><a>Private status: ${status}<a/><div></li>` // in this line we are generating few containers and elements by JavaScript that are gonna be displayed in our HTML, and also are gonna be styled with the help of our SCSS file 
                    
                     
                   
