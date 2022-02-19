@@ -1,8 +1,5 @@
-//Create the function to fetch the list of repository
-
 const listRepository = () => {
     const user = document.getElementById('userID').value;
-    // const url = "https://api.github.com/users/VikiSevcikova/repos?"
     const url = `https://api.github.com/users/${user}/repos`;
     if(user === ""){
         alert("The input is required. Please insert a valid User Name")
@@ -14,25 +11,28 @@ const listRepository = () => {
            }
            resp.json().then(repository => {
                console.log(repository)
-               repository.map(value => {
-                   const name = value.name;
-                   const url = value.hooks_url;
-               })
-               /*
-                0) Clone the repository and create your own branch before start to work
-                1) Print the name of the repository
-                2) Print the link of the repository
-                3) One or two more information that you believe its good for your application
-                4) Create a pull request when you finish your work
-               */
+               
+               for(i=0;i<repository.length;i++){
+                console.log('ID:', repository[i].id);
+                console.log('Repo:', repository[i].name);            
+                console.log('URL:', repository[i].html_url);
+
+                let repoList = document.getElementById('listRepo');
+                let li = document.createElement('li');
+
+                // Add Bootstrap list item class to each li
+                li.classList.add('list-group-item')
+
+                li.innerHTML = (`
+                    <p><strong>ID:</strong> ${repository[i].id}</p>
+                    <p><strong>Repo Name:</strong> ${repository[i].name}</p>
+                    <p><strong>URL:</strong> <a href="${repository[i].html_url}">${repository[i].html_url}</a></p>
+                `);
+                
+                // Append each li to the repoList
+                repoList.appendChild(li);
+               }
            })
        })
     }
 }
-
-//Add event click to the button
-const button = document.getElementById('searchRepository');
-button.addEventListener('click',(e)=> {
-    e.preventDefault();
-    listRepository();
-})
