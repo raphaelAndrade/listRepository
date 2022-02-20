@@ -10,10 +10,10 @@
     <title>List Repository</title>
 </head>
 <body>
-   <!--Header section-->
-   <header>
-       <div class="container">
-           <div class="row">
+    <!--Header section-->
+    <header>
+        <div class="container">
+            <div class="row">
                 <div class="col-md-3">
                     <div class="logo">List Users</div>
                 </div>
@@ -25,11 +25,11 @@
                         <a href="#">Contact Us</a>
                     </nav>
                 </div>
-           </div>
-       </div>
-   </header>
-   <!--Banner section-->
-   <section class="banner"></section>
+            </div>
+        </div>
+    </header>
+    <!--Banner section-->
+    <section class="banner"></section>
 
     <!--List Repository section-->
     <section class="listRespository">
@@ -48,17 +48,30 @@
                 <div class="col-md-12">
                     <form>
                         <div class="mb-3">
-                          <label for="userID" class="form-label">User ID</label>
-                          <input type="text" class="form-control" id="userID" aria-describedby="userID">
-                          <div id="emailHelp" class="form-text">Please insert the user ID</div>
+                            <label for="userID" class="form-label">User ID</label>
+                            <input type="text" class="form-control" id="userID" aria-describedby="userID">
+                            <div id="emailHelp" class="form-text">Please insert the user ID</div>
                         </div>
                         <button type="submit" class="btn btn-primary" id="searchRepository">Search Repository</button> <!--TODO: Call the listRepository function using onclick with a callback functin-->
-                      </form>
+                    </form>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <ul class="listRepo"><!--Create the list by javascript--></ul>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Url</th>
+                                <th scope="col">Language</th>
+                                <th scope="col">Wiki</th>
+                                <th scope="col">Forks</th>
+                            </tr>
+                        </thead>
+                        <tbody class="listRepo">
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
