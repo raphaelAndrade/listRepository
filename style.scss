@@ -8,9 +8,9 @@
 /* Header Section */
 header {
     width: 100%;
-    background-color: rgb(255, 99, 71);
+    background-color: rgb(165, 77, 192);
     padding: 15px 0;
-    border-bottom: 10px solid rgb(240, 75, 46);;
+    border-bottom: 10px solid rgb(165, 77, 192);
     .logo {
         width: 200px;
         height: 80px;
@@ -29,6 +29,9 @@ header {
             text-decoration: none;
             margin-left: 15px;
             display: inline-block;
+            &:hover{
+                color: red;
+            }
         }
     }
   }

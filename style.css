@@ -6,9 +6,9 @@
 /* Header Section */
 header {
   width: 100%;
-  background-color: tomato;
+  background-color: #a54dc0;
   padding: 15px 0;
-  border-bottom: 10px solid #f04b2e;
+  border-bottom: 10px solid #a54dc0;
 }
 
 header .logo {
@@ -31,6 +31,10 @@ header .mainMenu a {
   text-decoration: none;
   margin-left: 15px;
   display: inline-block;
+}
+
+header .mainMenu a:hover {
+  color: red;
 }
 
 /* Banner Section */
