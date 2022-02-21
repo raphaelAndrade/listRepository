@@ -29,9 +29,10 @@ header {
             text-decoration: none;
             margin-left: 15px;
             display: inline-block;
-            &:hover{
-                color: red;
-            }
+           
+        }
+        a:hover{
+            color: red;
         }
     }
   }
