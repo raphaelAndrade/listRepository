@@ -1,3 +1,4 @@
+<!-- This is a complete new branch-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +16,7 @@
        <div class="container">
            <div class="row">
                 <div class="col-md-3">
-                    <div class="logo">List Users</div>
+                    <div class="logo">List of Users</div>
                 </div>
                 <div class="col-md-9">
                     <nav class="mainMenu">
@@ -29,10 +30,22 @@
        </div>
    </header>
    <!--Banner section-->
-   <section class="banner"></section>
+   <section class="banner">
+      <div>
+        <div>
+            <h2>What even is the purpose of this website???</h2>
+        </div>
+        <div class="text">
+            <p>The main purpose of this webpage is for the user to be able to see the repositories of a given Github's user ;))</p>
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+   </section>
 
     <!--List Repository section-->
-    <section class="listRespository">
+    <section class="listRepository">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -52,15 +65,27 @@
                           <input type="text" class="form-control" id="userID" aria-describedby="userID">
                           <div id="emailHelp" class="form-text">Please insert the user ID</div>
                         </div>
-                        <button type="submit" class="btn btn-primary" id="searchRepository">Search Repository</button> <!--TODO: Call the listRepository function using onclick with a callback functin-->
+                        <button class="btn btn-primary" id="searchRepository">Search Repository</button> <!--TODO: Call the listRepository function using onclick with a callback functin-->
                       </form>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <ul class="listRepo"><!--Create the list by javascript--></ul>
+                    <ul class="listRepo" id="listRepoLinks">
+                        <li><!--contenet generated with javascript--></li>
+                    </ul>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="listRepo" id="listRepoNames">
+                        <div class="item">
+                            <li><!--contenet generated with javascript--></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </section>
 </body>
