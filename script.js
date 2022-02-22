@@ -27,8 +27,8 @@ const listRepository = () => {
                    console.log(url);
                    const ul = document.getElementById("listRepoLinks");
                    ul.innerHTML += `<li><div class="url">Link:<a>href="${url}">${url}<a/></div><div class="name"><a> Name: ${name}</a></div><div><div class="status"><a>Private status: ${status}<a/><div></li>` // in this line we are generating few containers and elements by JavaScript that are gonna be displayed in our HTML, and also are gonna be styled with the help of our SCSS file 
-                   
-                    
+                   // the inner HTML that we are using above is an element property that allow us to set or get the HTML contained within the element 
+                   // and then also we are using the add operand which (+=) adds the value of the right operand to a variable and assigns the result to the variable.
                   
                 })
             

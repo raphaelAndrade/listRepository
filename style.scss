@@ -2,9 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-*{
-    background-color: bisque;
-}
+
 /* Header Section */
 header {
     width: 100%;
@@ -24,16 +22,17 @@ header {
     .mainMenu {
         float: right;
         margin-top: 25px;
+        a:hover{
+            color: aquamarine;
+        }
         a{
             color: white;
             text-decoration: none;
-            margin-left: 15px;
+            padding-left: 15px;
             display: inline-block;
            
         }
-        a:hover{
-            color: red;
-        }
+    
     }
   }
 
@@ -41,7 +40,7 @@ header {
   .banner {
       width: 100%;
       height: 400px;
-      background: rgb(233, 122, 42);
+      background: bisque;
       margin-bottom: 40px;
       text-align: center;
       font-family: 'Fredoka One', cursive;
@@ -69,7 +68,7 @@ header {
       color: red;
       li {
           a{
-            //padding-left: 100px;
+            padding-left: 0px;
               
           }
           .url{
@@ -95,7 +94,7 @@ header {
   .container {
       .row {
           .col-md-3{
-              background-color: aquamarine;
+              background-color: rgb(165, 77, 192);
               padding-left: 55px;
               .logo{
                   color: black;
@@ -103,17 +102,31 @@ header {
               }
           }
           .col-md-9{
-            background-color: aquamarine;
-            .mainMenu{
-                background-color: aqua;
+               background-color: rgb(165, 77, 192);
             }
             a{
-                background-color: aqua;
+                background-color: rgb(165, 77, 192);
                 font-weight: bolder;
                 font-size: 20px;
                 color: rgb(66, 65, 65);
             }
           }
       }
-  }
+  
+.video{
+    background-color: bisque;
+}
+
+.listRepository{
+    background-color: bisque;
+    .container{
+        .row{
+            .col-md-12{
+                h1{
+                    padding-top: 60px;
+                }
+            }
+        }
+    }
+}
 
