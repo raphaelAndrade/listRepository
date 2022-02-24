@@ -12,25 +12,24 @@ const listRepository = () => {
            if(status !== 200){
                console.log(`Ops! Something is wrong ${status}`)
            }
+           document.getElementById("listRepoInfo").innerHTML=""
            resp.json().then(repository => {
-               console.log(repository)
+            //    console.log(repository)
+
                repository.map(value => {
+                   const td= document.createElement("tr")
                    const name = value.name;
                    const url = value.hooks_url;
+                   const description = value.description;
+                   document.getElementById("listRepoInfo").innerHTML+=`<td>${name}</td> <td> ${url}</td><td>${description}` 
+                                  
                })
-               /*
-                0) Clone the repository and create your own branch before start to work
-                1) Print the name of the repository
-                2) Print the link of the repository
-                3) One or two more information that you believe its good for your application
-                4) Create a pull request when you finish your work
-               */
            })
        })
     }
 }
 
-//Add event click to the button
+// Add event click to the button
 const button = document.getElementById('searchRepository');
 button.addEventListener('click',(e)=> {
     e.preventDefault();
