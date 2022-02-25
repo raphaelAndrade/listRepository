@@ -36,4 +36,4 @@ button.addEventListener('click',(e)=> {
     listRepository();
 })
 
-alert("hello");
+console.log("hello")
